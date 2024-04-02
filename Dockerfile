@@ -42,6 +42,7 @@ RUN ln -s /usr/bin/python3.8 /usr/local/bin/python && \
 # Update pip and setuptools to the latest version
 # This step ensures that we have the latest tools for installing Python packages.
 RUN python -m pip install --upgrade pip setuptools
+RUN pip install opencv-python
 
 # Clone the LightZero repository from GitHub
 # This step downloads the latest version of LightZero to our Docker image.
